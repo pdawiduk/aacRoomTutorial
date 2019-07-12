@@ -12,7 +12,7 @@ interface ArticleDAO {
     fun getAll():List<ArticleEntity>
 
     @Query("SELECT * FROM Article WHERE uid IN(:ids)")
-    fun loadByIds(ids:Array<Int>)
+    fun loadByIds(ids:Array<Int>):List<ArticleEntity>
 
     @Insert
     fun insertAll(vararg article:ArticleEntity)

@@ -7,11 +7,11 @@ import androidx.room.PrimaryKey
  data class ArticleEntity (
 
     @PrimaryKey(autoGenerate = true)
-    private val uid:Int,
-    private val title:String?,
-    private val site:String?,
-    private val image:String?,
-    private val premium:Boolean?,
-    private val comment:Int
+     val uid:Int,
+     val title:String?,
+     val site:String?,
+     val image:String?,
+     val premium:Boolean?,
+     val comment:Int
 
 )
